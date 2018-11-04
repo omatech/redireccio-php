@@ -1,0 +1,13 @@
+{
+  "name": "omatech/redireccio",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Christian Bohollo",
+      "email": "cbohollo@omatech.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
