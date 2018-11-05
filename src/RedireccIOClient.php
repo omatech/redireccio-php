@@ -2,13 +2,13 @@
 
 namespace Omatech\RedireccIO;
 
-use GuzzleHttp\Client;
+use GuzzleHttp\Client as Http;
 use GuzzleHttp\Exception\ClientException;
 
-class RedireccIOClient
+class Client
 {
     /**
-     * @var Client
+     * @var GuzzleHttp\Client
      */
     private $http;
 
@@ -18,7 +18,7 @@ class RedireccIOClient
      */
     public function __construct($config)
     {
-        $this->http = new Client([
+        $this->http = new Http([
             'base_uri' => $config['server'],
             'headers' => [
                 'Accept' => 'application/json',

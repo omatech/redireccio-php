@@ -7,6 +7,11 @@
       "email": "cbohollo@omatech.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Omatech\\RedireccIO\\Client\\": "src/"
+    }
+  },
   "require": {
     "guzzlehttp/guzzle": "~6.0"
   }
