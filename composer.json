@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Omatech\\RedireccIO\\Client\\": "src/"
+      "Omatech\\RedireccIO\\": "src/"
     }
   },
   "require": {
