@@ -18,6 +18,7 @@ class Client
      */
     private $config;
 
+		
     /**
      * RedirectIOClient constructor.
      * @param $config
