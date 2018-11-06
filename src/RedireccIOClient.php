@@ -35,7 +35,7 @@ class Client
 
     public function intercept($url, $method)
     {
-        if(array_key_exist('enabled', $this->config) && $this->config['enabled']) {
+        if(array_key_exists('enabled', $this->config) && $this->config['enabled']) {
             $this->validateUrl($url, $method);
         }
     }
