@@ -18,7 +18,6 @@ class Client
      */
     private $config;
 
-//hola Christian
 		
     /**
      * RedirectIOClient constructor.
