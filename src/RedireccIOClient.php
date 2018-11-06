@@ -11,6 +11,7 @@ class Client
      * @var GuzzleHttp\Client
      */
     private $http;
+		
 
     /**
      * @var RedireccioConfiguration
