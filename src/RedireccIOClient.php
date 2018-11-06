@@ -13,11 +13,17 @@ class Client
     private $http;
 
     /**
+     * @var RedireccioConfiguration
+     */
+    private $config;
+
+    /**
      * RedirectIOClient constructor.
      * @param $config
      */
     public function __construct($config)
     {
+        $this->config = $config;
         $this->http = new Http([
             'base_uri' => $config['server'],
             'headers' => [
@@ -29,7 +35,9 @@ class Client
 
     public function intercept($url, $method)
     {
-        $this->validateUrl($url, $method);
+        if(array_key_exist('enabled', $this->config) && $this->config['enabled']) {
+            $this->validateUrl($url, $method);
+        }
     }
 
     private function validateUrl($url, $method)
